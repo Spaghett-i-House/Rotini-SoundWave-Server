@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": false,
+        "declaration": true,
+        "allowUnreachableCode": true,
+        "moduleResolution": "node",
+        "sourceMap": false,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "skipLibCheck": true,
+        "declarationDir": "dist/typings",
+        "jsx": "react",
+        "lib": [
+            "es2015",
+            "dom"
+        ],
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.tsx",
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "src/**/*.test.ts*",
+        "test/**/*"
+        
+    ]
+}
