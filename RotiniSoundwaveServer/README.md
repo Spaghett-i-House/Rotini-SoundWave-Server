@@ -1,6 +1,4 @@
-# KeystoneTS
-> An site built with KeystoneJS, powered by TypeScript
+RotiniSoundwaveServer
+=====================
 
-### Local Development
-
-1. Run __`docker-compose up`__
+Powered by [KeystoneJS](https://keystonejs.com).
