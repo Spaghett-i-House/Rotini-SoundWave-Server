@@ -2,33 +2,19 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es6",
-        "noImplicitAny": false,
-        "declaration": true,
-        "allowUnreachableCode": true,
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
         "moduleResolution": "node",
-        "sourceMap": false,
-        "outDir": "dist",
-        "baseUrl": ".",
-        "skipLibCheck": true,
-        "declarationDir": "dist/typings",
-        "jsx": "react",
-        "lib": [
-            "es2015",
-            "dom"
-        ],
-        "paths": {
-            "*": [
-                "node_modules/*"
-            ]
-        }
+        "outDir": "_dist",
+        "baseUrl": "."
     },
     "include": [
-        "src/**/*.tsx",
         "src/**/*.ts"
-    ],
-    "exclude": [
-        "src/**/*.test.ts*",
-        "test/**/*"
-        
     ]
 }

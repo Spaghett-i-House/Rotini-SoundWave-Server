@@ -1,0 +1,4 @@
+mixin metaTags ()
+  - var meta = (page && page.meta) ? page.meta : {}
+  title=(meta.title || 'KeystoneJS')
+  meta( name="description", content=(meta.description || 'A site built with KeystoneJS') )

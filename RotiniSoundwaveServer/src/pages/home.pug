@@ -1,0 +1,15 @@
+extends /_layout.pug
+
+block content
+  .hero.hero--centered#app
+    .hero__content.fade-in( v-fader.fade-in--ready )
+      h1.hero__title=page.hero.title
+      h2.hero__subtitle( v-html=`subtitle('${page.hero.subtitle}')` )=page.hero.subtitle
+      button.button.button--left-fill.hero__button(
+        data-content=page.hero.buttonLabel
+        v-on:click="heroButtonClicked()"
+      )=page.hero.buttonLabel
+  section.section
+    .container
+      h3.section__title=page.intro.title
+      .section__content.rich-text!=page.intro.content

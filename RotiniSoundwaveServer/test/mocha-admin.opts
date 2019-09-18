@@ -1,4 +1,0 @@
-src/admin/**/*.test.ts
---growl
---require ts-node/register
---reporter spec

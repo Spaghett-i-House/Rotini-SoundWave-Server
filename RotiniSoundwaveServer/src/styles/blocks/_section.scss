@@ -1,0 +1,19 @@
+.section {
+
+    padding: 4rem 0;
+
+    &--dark {
+        color: white;
+        background-color: $color__dark-gray;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+
+    &__content {
+        margin-top: 1.5rem;
+    }
+
+}

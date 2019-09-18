@@ -1,0 +1,10 @@
+{
+    "watch": [
+        "_dist/app.js",
+        "_dist/routes.js",
+        "_dist/models",
+        "_dist/pages",
+        "_dist/updates"
+    ],
+    "legacyWatch": true
+}

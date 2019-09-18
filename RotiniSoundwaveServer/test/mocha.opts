@@ -1,6 +1,0 @@
-test/unit/**/*.ts
---recursive
---require ts-node/register
---require must
---growl
---reporter progress
