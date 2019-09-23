@@ -1,0 +1,47 @@
+{
+  "name": "rotiniserver",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && npm run watch",
+    "serve": "nodemon dist/keystone.js",
+    "test": "jest --forceExit",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "build": "npm run build-less && npm run build-ts && npm run tslint && npm run copy-static-assets",
+    "build-less": "lessc src/public/styles/site.less dist/public/styles/site.min.css",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve\"",
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Less,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-less\" \"npm run watch-ts\" \"npm run serve-debug\"",
+    "watch-less": "lessc src/public/styles/site.less dist/public/styles/site.min.css",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "copy-static-assets": "node copyStaticAssets.js",
+    "debug": "npm run build && npm run watch-debug",
+    "serve-debug": "nodemon --inspect dist/keystone.js"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "dotenv": "^6.2.0",
+    "keystone": "^4.0.0",
+    "lodash": "^4.17.11",
+    "pug": "^2.0.3",
+    "less": "^3.9.0"
+  },
+  "devDependencies": {
+    "@types/async": "^2.4.0",
+    "@types/dotenv": "^6.1.0",
+    "@types/errorhandler": "^0.0.32",
+    "@types/express": "^4.16.0",
+    "@types/lodash": "^4.14.120",
+    "@types/mongoose": "^5.3.8",
+    "@types/node": "^10.12.18",
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "shelljs": "^0.8.3",
+    "supertest": "^3.4.1",
+    "stylus": "^0.54.5",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  }
+}

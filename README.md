@@ -1,2 +1,4 @@
-# Rotini-SoundWave-Server
-The Node.js backend for the Rotini project
+RotiniServer
+=====================
+
+Powered by [KeystoneJS](https://keystonejs.com).
