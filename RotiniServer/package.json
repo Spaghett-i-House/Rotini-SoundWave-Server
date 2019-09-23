@@ -10,8 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.1",
+    "@types/mongodb": "^3.3.3",
     "@types/socket.io": "^2.1.2",
     "express": "^4.17.1",
+    "mongoose": "^5.7.1",
     "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.5.17"
   }
 }

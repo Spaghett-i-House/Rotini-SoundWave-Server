@@ -8,7 +8,7 @@ class App {
   public io;
 
   constructor () {
-    this.express = express()
+    this.express = express();
     this.http = require('http').Server(this.express);
     this.io = require("socket.io")(this.http);
     this.mountRoutes();
