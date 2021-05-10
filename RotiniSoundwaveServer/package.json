@@ -22,7 +22,7 @@
     "async": "^2.6.1",
     "dotenv": "^6.2.0",
     "keystone": "^4.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "pug": "^2.0.3",
     "less": "^3.9.0",
     "keystone-email": "^1.1.0"
