@@ -19,7 +19,7 @@
     "serve-debug": "nodemon --inspect dist/keystone.js"
   },
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^2.6.4",
     "dotenv": "^6.2.0",
     "keystone": "^4.0.0",
     "lodash": "^4.17.11",
